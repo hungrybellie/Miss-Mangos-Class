@@ -1,4 +1,4 @@
-﻿define e = Character("Eileen")
+﻿define e = Character("Mango")
 
 # define the song titles and their files
 init python:
@@ -6,11 +6,6 @@ init python:
     # after adding new songs, please remember to delete the persistent data
 
     rhythm_game_songs = [
-    Song('Isolation', 'audio/Isolation.mp3', 'audio/Isolation.beatmap.txt'),
-    Song('Positivity', 'audio/Positivity.mp3', 'audio/Positivity.beatmap.txt'),
-    Song('Pearlescent', 'audio/Pearlescent.mp3', 'audio/Pearlescent.beatmap.txt'),
-    Song('Pearlescent - trimmed', 'audio/Pearlescent - trimmed.mp3', 'audio/Pearlescent - trimmed.beatmap.txt'), # 22 sec, easy to test 
-    Song('Thoughts', 'audio/Thoughts.mp3', 'audio/Thoughts.beatmap.txt'),
     Song('Rocks', 'audio/rocks.mp3', 'audio/rocks.beatmap.txt'),
     Song('Solar System', 'audio/solar_system.mp3', 'audio/solar_system.beatmap.txt'),
     Song('Addition', 'audio/addition.mp3', 'audio/addition.beatmap.txt')
@@ -32,18 +27,18 @@ default selected_song = None
 label start:
     scene bg room
 
-    e "Welcome to the Ren'Py Rhythm Game! Choose a lofi song you'd like to play."
+    e "Welcome to Mango Beat! Please press enter to select the lesson you want to do today."
 
     window hide
     call rhythm_game_entry_label
 
-    e "Nice work hitting those notes! Hope you enjoyed the game."
+    e "Nice work hitting those notes! Hope you enjoyed learning this awesome new material!"
 
     return
 
 # a simpler way to launch the minigame 
 label test:
-    e "Welcome to the Ren'Py Rhythm Game! Ready for a challenge?"
+    e "Welcome to Mango Beat! Ready for a challenge?"
     window hide
     $ quick_menu = False
 
