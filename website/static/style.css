@@ -161,3 +161,9 @@ body {
     font-size: 3vw;
     color: rgb(255, 246, 234);
 }
+
+.buttonPic {
+    height: 120%;
+    width: 120%;
+    margin-left: -10px;
+}
