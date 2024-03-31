@@ -11,7 +11,6 @@ body {
 .row2 {
     display: flex;
     justify-content: center;
-    gap: 40%;
 }
 
 
@@ -99,6 +98,19 @@ body {
     color: rgb(255, 246, 234);
 }
 
+.nameCard {
+    background-color: #f5e7cc;
+    padding: 10%;
+    border-radius: 30px;;
+}
+
+.chooseCard {
+    background-color: #f0edbc;
+    padding: 10%;
+    border-radius: 30px;;
+}
+
+
 .visual {
     background-color: transparent;
     border: none;
@@ -133,7 +145,7 @@ body {
     font-weight: 400;
     font-style: normal;
     font-size: 3vw;
-    color: #94d467;
+    color: #6ca147;
     height: 100%;
     width: 100%;
 }
@@ -141,26 +153,28 @@ body {
 .textInput {
     border: none;
     border-bottom: #352c2c 2px solid;
+    background-color: transparent;
     font-family: "Jua", sans-serif;
     font-weight: 400;
     font-style: normal;
     font-size: 3vw;
-    color: #e8bc6b;
+    color: #302c24;
     text-align: center;
+ 
 }
 
 .textInput:focus {
     outline: none;
-    border-bottom: #e8be71 2px solid;
+    border-bottom: #b38a2a 2px solid;
 }
 
 .solidButton {
-    background-color: #e8bc6b;
+    background-color: #aab533;
     border-radius: 20px;
     border: none;
     height: 20%;
     width: 40%;
-    padding: 4%;
+    padding: 3%;
     font-family: "Jua", sans-serif;
     font-weight: 400;
     font-style: normal;
