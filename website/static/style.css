@@ -69,6 +69,7 @@ body {
 .gameCard {
     background-color: #f18c75;
     border-radius: 30px;
+    border: none;
     padding: 10%;
     height: 100%;
     width: 100%;
