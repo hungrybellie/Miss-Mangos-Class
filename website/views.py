@@ -1,4 +1,4 @@
-from flask import Blueprint, flash, redirect, render_template, request, url_for
+from flask import Blueprint, flash, jsonify, redirect, render_template, request, url_for
 from flask_login import login_required, current_user
 from .models import Friendship, SharedStudySet, User, StudySet, QuestionAnswer, Audio
 from . import db
@@ -6,6 +6,7 @@ import smtplib
 from email.message import EmailMessage
 import webbrowser
 import subprocess
+from study_set_generator import generate_questions
 
 views = Blueprint("views", __name__)
 # views.static_url_path = '/static'
@@ -44,3 +45,10 @@ def start_renpy_game():
         return 'Mango Beat started'
     except subprocess.CalledProcessError as e:
         return f'Error: {e}', 500
+    
+    ## The route that will take in stuff from HTML to generate the questions here:
+@views.route('/generate_study_set', methods=['POST'])
+def generate_study_set_route():
+    # Call the study set generator function
+    study_set = generate_questions()
+    return jsonify(study_set)

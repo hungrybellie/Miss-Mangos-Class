@@ -6,6 +6,8 @@ from dotenv import load_dotenv # import load_dotenv from dotenv to load .env fil
 from flask_login import LoginManager # import LoginManager from flask_login for handling user sessions
 import openai
 
+from question_generator import generate_questions
+
 load_dotenv() # load environment variables
 
 db = SQLAlchemy() # create an instance of SQLAlchemy for database operations
