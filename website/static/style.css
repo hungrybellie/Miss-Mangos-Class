@@ -111,14 +111,14 @@ body {
 
 .nameCard {
     background-color: #f5e7cc;
-    border: #ebd19c 5px solid;
+    border: #ebd19c 3px solid;
     padding: 10%;
     border-radius: 30px;;
 }
 
 .chooseCard {
     background-color: #f0edbc;
-    border: #cbc56e 5px solid;
+    border: #cbc56e 3px solid;
     padding: 10%;
     border-radius: 30px;;
 }
@@ -232,8 +232,8 @@ body {
 }
 
 .learningPic {
-    border-radius: 10px;
-    border: #afc553 3px solid;
+    border-radius: 30px;
+    border: #f3b457 3px solid;
 }
 
 .signIn {
