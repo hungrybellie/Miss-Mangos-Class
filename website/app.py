@@ -25,7 +25,7 @@ def dashboard():
 def start_pygame_game():
     try:
         # Execute the flashGame.py script
-        subprocess.run(['python3', 'flashGame.py'], cwd='/Users/reneecai/Miss-Mangos-Class/FlashCardFiles')
+        subprocess.run(['python3', 'flashGame.py'], cwd='../Miss-Mangos-Class/FlashCardFiles')
         return 'Flash Cards started'
     except subprocess.CalledProcessError as e:
         return f'Error: {e}', 500
