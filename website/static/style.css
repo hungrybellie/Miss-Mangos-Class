@@ -233,6 +233,19 @@ body {
     margin-bottom: 20%;
 }
 
+.signUp {
+    border-radius: 14px;
+    border-color: transparent;
+    background-color: #ea7d67;  
+    font-family: "Jua", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 3vw;
+    text-align: center;
+    color: rgb(255, 246, 234);
+    padding: 1%;
+    margin-bottom: 10%;
+}
 
 ::placeholder {
     color: rgb(255, 246, 234);
