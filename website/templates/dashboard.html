@@ -19,7 +19,7 @@
 
 
     <div class="center">
-
+        <img src="../static/assets/logo.png" alt="Logo" id="logo" style="position: absolute; top: -50px; left: -50px; width: 25%; height: auto; margin: 10px;">
         <span class="title">
             Miss Mango's Class
          </span>
@@ -68,9 +68,26 @@
             Syllabus
         </span>
 
+        <button onclick="startPygameGame()">Start FlashCard</button>
+        <button onclick="startRenpyGame()">Start Mango Beat</button>
+
     </div>
         
+    <script>
+        function startPygameGame() {
+            fetch('/start_pygame_game')
+                .then(response => response.text())
+                .then(data => console.log(data))
+                .catch(error => console.error(error));
+        }
 
+        function startRenpyGame() {
+            fetch('/start_renpy_game')
+                .then(response => response.text())
+                .then(data => console.log(data))
+                .catch(error => console.error(error));
+        }
+    </script>
 
 
 </body>
