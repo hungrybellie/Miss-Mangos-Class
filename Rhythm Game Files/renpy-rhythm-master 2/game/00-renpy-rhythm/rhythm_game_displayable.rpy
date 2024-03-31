@@ -4,10 +4,10 @@ define THIS_PATH = '00-renpy-rhythm/'
 
 # XXX: using os.path.join here will actually break because Ren'Py somehow doesn't recognize it
 define IMG_DIR = 'images/'
-define IMG_UP = THIS_PATH + IMG_DIR + 'up.png'
-define IMG_LEFT = THIS_PATH + IMG_DIR + 'left.png'
-define IMG_RIGHT = THIS_PATH + IMG_DIR + 'right.png'
-define IMG_DOWN = THIS_PATH + IMG_DIR + 'down.png'
+define IMG_UP = THIS_PATH + IMG_DIR + 'icon_F.png'
+define IMG_LEFT = THIS_PATH + IMG_DIR + 'icon_D.png'
+define IMG_RIGHT = THIS_PATH + IMG_DIR + 'icon_K.png'
+define IMG_DOWN = THIS_PATH + IMG_DIR + 'icon_J.png'
 
 # music channel for renpy.play
 define CHANNEL_RHYTHM_GAME = 'CHANNEL_RHYTHM_GAME'

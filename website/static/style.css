@@ -172,3 +172,11 @@ body {
     height: 50%;
     width: 50%;
 }
+
+#logo {
+    position: absolute;
+    top: 10px; /* Adjust as needed */
+    left: 10px; /* Adjust as needed */
+    width: 30%; /* Your desired width */
+    height: auto; /* Keeps the aspect ratio of the image */
+}
