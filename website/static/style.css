@@ -111,12 +111,14 @@ body {
 
 .nameCard {
     background-color: #f5e7cc;
+    border: #ebd19c 5px solid;
     padding: 10%;
     border-radius: 30px;;
 }
 
 .chooseCard {
     background-color: #f0edbc;
+    border: #cbc56e 5px solid;
     padding: 10%;
     border-radius: 30px;;
 }

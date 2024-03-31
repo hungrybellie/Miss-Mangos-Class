@@ -66,7 +66,7 @@
             message.innerHTML =
               "Okay, " +
               name.value +
-              "! \n Now choose your learning style below to get a game tailored just for you! If you don't know it's okay, press the \"IDK\" button!";
+              "! \n Now choose your learning style below to start a game tailored just for you! If you don't know your style, press the \"IDK\" button!";
             msgArea.appendChild(message);
             document.getElementById("save").onclick = null;
         }
@@ -136,7 +136,12 @@
         <br />
 
         <div class="center2">
-          <button class="solidButton">IDK!</button>
+          <button id="quiz" class="solidButton">IDK!</button>
+          <script>
+             document.getElementById("quiz").onclick = function () {
+              window.location.href = "https://youtu.be/_IopcOwfsoU?si=JmulS9x6i_cVONtE";
+             }
+          </script>
         </div>
       </div>
     </div>
