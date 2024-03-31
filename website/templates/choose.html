@@ -45,7 +45,7 @@
         <br />
         <br />
         <br />
-        <button class="solidButton" onclick="showCustomMsg()">save!</button>
+        <button class="solidButton" id="save" onclick="showCustomMsg()">save!</button>
       </div>
 
       <br />
@@ -62,22 +62,22 @@
         const msgArea = document.getElementById("customMsg");
 
         function showCustomMsg() {
-          let message = document.createElement("SPAN");
-          message.innerHTML =
-            "Okay, " +
-            name.value +
-            "! \n Now choose your learning style below to get a game tailored just for you! If you don't know it's okay, press the \"IDK\" button!";
-          msgArea.appendChild(message);
+            let message = document.createElement("SPAN");
+            message.innerHTML =
+              "Okay, " +
+              name.value +
+              "! \n Now choose your learning style below to get a game tailored just for you! If you don't know it's okay, press the \"IDK\" button!";
+            msgArea.appendChild(message);
+            document.getElementById("save").onclick = null;
         }
       </script>
 
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
 
       <div class="chooseCard">
         <span class="title"> I want to play games for... </span>

@@ -60,6 +60,17 @@ body {
     color: #352c2c;
 }
 
+.smallTitle {
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.5vw;
+    text-align: left;
+    color: #352c2c;
+    margin-bottom: 10%;
+}
+
 .text {
     font-family: "Nunito", sans-serif;
     font-optical-sizing: auto;
@@ -172,9 +183,9 @@ body {
     background-color: #aab533;
     border-radius: 20px;
     border: none;
-    height: 20%;
+    height: 14%;
     width: 40%;
-    padding: 3%;
+    padding: 1%;
     font-family: "Jua", sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -206,4 +217,23 @@ body {
 .learningPic {
     border-radius: 10px;
     border: #afc553 3px solid;
+}
+
+.signIn {
+    border-radius: 14px;
+    border-color: transparent;
+    background-color: #ea7d67;  
+    font-family: "Jua", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 3vw;
+    text-align: center;
+    color: rgb(255, 246, 234);
+    padding: 1%;
+    margin-bottom: 20%;
+}
+
+
+::placeholder {
+    color: rgb(255, 246, 234);
 }

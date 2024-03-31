@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jua&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jua&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./../static/style.css" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <button class="homeButton"></button>
+    <script type="text/javascript">
+      document.getElementById("next").onclick = function () {
+        location.href = "/";
+      };
+    </script>
+
+    <div class="center">
+      <div class="row">
+        <img
+          src="./../static/assets/miss_mango.png"
+          style="width: 50%; height: 50%; padding: 10%"
+          alt=""
+        />
+        <div class="nameCard">
+          <span class="title">Log in</span>
+          <br />
+          <br />
+
+          <span class="smallTitle">
+            don't have an account? creat one here!
+          </span>
+
+          <br />
+          <br />
+          <br />
+
+          <input class="signIn" type="text" placeholder="username" />
+
+          <input class="signIn" type="password" placeholder="password" />
+
+          <button class="solidButton">GO!</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
