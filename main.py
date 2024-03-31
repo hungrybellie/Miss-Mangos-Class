@@ -26,7 +26,7 @@ YELLOW = (232, 188, 107)
 font = pygame.font.Font(None, 36)
 
 # Define the title screen background image
-title_image = pygame.image.load("Images\MissMangoCB.png")
+title_image = pygame.image.load("MissMangoCB.png")
 
 # Main game loop
 running = True
