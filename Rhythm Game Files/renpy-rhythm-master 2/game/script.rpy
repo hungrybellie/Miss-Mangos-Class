@@ -13,8 +13,9 @@ init python:
 
 
     for song in rhythm_game_songs:
-            if song.name not in persistent.rhythm_game_high_scores:
+        if song.name not in persistent.rhythm_game_high_scores:
                 persistent.rhythm_game_high_scores[song.name] = (0, 0)
+
 
 # map song name to high scores
 default persistent.rhythm_game_high_scores = {

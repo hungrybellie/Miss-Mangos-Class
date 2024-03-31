@@ -87,7 +87,7 @@ screen select_song_screen(songs):
                     label '% Perfect Hits'
 
                 grid 3 len(songs):
-                    xspacing 100
+                    xspacing 160
                     for song in songs:
                         textbutton song.name action [
                         Return(song)
