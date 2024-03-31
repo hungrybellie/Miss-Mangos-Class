@@ -202,3 +202,8 @@ body {
     background-color: transparent;
     border-color: transparent;
 }
+
+.learningPic {
+    border-radius: 10px;
+    border: #afc553 3px solid;
+}
