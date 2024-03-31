@@ -193,6 +193,21 @@ body {
     color: rgb(255, 246, 234);
 }
 
+.solidButton2 {
+    background-color: #aab533;
+    border-radius: 20px;
+    border: none;
+    height: 14%;
+    width: 40%;
+    padding: 1%;
+    font-family: "Jua", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2vw;
+    color: rgb(255, 246, 234);
+}
+
+
 .buttonPic {
     height: 120%;
     width: 120%;
@@ -226,7 +241,7 @@ body {
     font-family: "Jua", sans-serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 3vw;
+    font-size: 2vw;
     text-align: center;
     color: rgb(255, 246, 234);
     padding: 1%;
@@ -240,7 +255,7 @@ body {
     font-family: "Jua", sans-serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 3vw;
+    font-size: 2vw;
     text-align: center;
     color: rgb(255, 246, 234);
     padding: 1%;
