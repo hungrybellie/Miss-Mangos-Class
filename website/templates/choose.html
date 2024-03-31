@@ -25,7 +25,10 @@
     <br />
 
     <div class="center">
-      <span class="title"> Let's set up your player profile and play some cool study games based on your learning style! </span>
+      <span class="title">
+        Let's set up your player profile and play some cool study games based on
+        your learning style!
+      </span>
 
       <br />
       <br />
@@ -38,11 +41,11 @@
         <span class="title"> My name is </span>
         <br />
         <br />
-        <input class="textInput" type="text" name="" id="" />
+        <input class="textInput" type="text" name="" id="nameInput" />
         <br />
         <br />
         <br />
-        <button class="solidButton">save!</button>
+        <button class="solidButton" onclick="showCustomMsg()">save!</button>
       </div>
 
       <br />
@@ -52,6 +55,30 @@
       <br />
       <br />
 
+      <div class="title" id="customMsg"></div>
+
+      <script>
+        const name = document.getElementById("nameInput");
+        const msgArea = document.getElementById("customMsg");
+
+        function showCustomMsg() {
+          let message = document.createElement("SPAN");
+          message.innerHTML =
+            "Okay, " +
+            name.value +
+            "! \n Now choose your learning style below to get a game tailored just for you! If you don't know it's okay, press the \"IDK\" button!";
+          msgArea.appendChild(message);
+        }
+      </script>
+
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+
+
       <div class="chooseCard">
         <span class="title"> I want to play games for... </span>
 
@@ -59,7 +86,6 @@
         <br />
         <br />
         <br />
-      
 
         <div class="row2">
           <button id="option" onclick="startPygameGame()" class="visual">
@@ -110,14 +136,13 @@
         <br />
 
         <div class="center2">
-          <button class="solidButton">I dont know!</button>
+          <button class="solidButton">IDK!</button>
         </div>
       </div>
     </div>
-    <br>
-    <br>
-    <br>
-    <br>
-
+    <br />
+    <br />
+    <br />
+    <br />
   </body>
 </html>
