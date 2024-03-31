@@ -4,12 +4,14 @@ import os
 from os import path # import path from os module to work with file paths
 from dotenv import load_dotenv # import load_dotenv from dotenv to load .env files
 from flask_login import LoginManager # import LoginManager from flask_login for handling user sessions
+import openai
 
 load_dotenv() # load environment variables
 
 db = SQLAlchemy() # create an instance of SQLAlchemy for database operations
 DB_NAME = os.getenv('DB_NAME') # retrieve the database name from environment variables
 SECRET_KEY = os.getenv('SECRET_KEY') # retrieve the secret key from environment variables
+openai.api_key = os.getenv("OPENAI_API_KEY") # retrieve the secret OpenAI API key from environment variables
 
 def create_app():
     app = Flask(__name__) # instantiate a new Flask application
