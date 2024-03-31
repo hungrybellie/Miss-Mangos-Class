@@ -46,24 +46,30 @@
             </script>
 
             <button class="tactile">
-                <img class="buttonPic" src="../static/assets/tactile.png" alt="">
+                <img class="buttonPic" onclick="startPygameGame()" src="../static/assets/tactile.png" alt="">
                 Tactile Learner</button>
-            <script type="text/javascript">
-                document.getElementById("option").onclick = function () {
-                    location.href = "/dashboard";
-                };
-            </script>
 
             <button class="auditory">
-                <img class="buttonPic" src="../static/assets/auditory.png" alt="">
+                <img class="buttonPic" onclick="startRenpyGame()" src="../static/assets/auditory.png" alt="">
                 Auditory Learner</button>
-            <script type="text/javascript">
-                document.getElementById("option").onclick = function () {
-                    location.href = "/dashboard";
-                };
-            </script>
         </div>
 
+
+        <script>
+            function startPygameGame() {
+                fetch('/start_pygame_game')
+                    .then(response => response.text())
+                    .then(data => console.log(data))
+                    .catch(error => console.error(error));
+            }
+    
+            function startRenpyGame() {
+                fetch('/start_renpy_game')
+                    .then(response => response.text())
+                    .then(data => console.log(data))
+                    .catch(error => console.error(error));
+            }
+        </script>
 
         <br>
         <br>
