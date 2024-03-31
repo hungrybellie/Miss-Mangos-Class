@@ -1,90 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./../static/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jua&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./../static/style.css" />
     <title>Document</title>
-</head>
-<body>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
+  </head>
+  <body>
+    <button class="homeButton"></button>
+    <script type="text/javascript">
+      document.getElementById("next").onclick = function () {
+        location.href = "/home";
+      };
+    </script>
+    <br />
+    <br />
+    <br />
+    <br />
 
     <div class="center">
-        <img src="../static/assets/logo.png" alt="Logo" id="logo" style="position: absolute; top: 0; left: 0; width: 30%; height: auto; margin: 10px;">
-        <span class="title">
-            I'm a...
-        </span>
+      <span class="title"> I'm a... </span>
 
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
 
+      <div class="row2">
+        <button id="option" onclick="startPygameGame()" class="visual">
+          <img class="buttonPic" src="../static/assets/visual.png" alt="" />
+          Visual Learner
+        </button>
 
-        <div class="row2">
-            <button  id="option" class="visual">
-                <img class="buttonPic" src="../static/assets/visual.png" alt="">
-                Visual Learner
-            </button>
-            <script type="text/javascript">
-                document.getElementById("option").onclick = function () {
-                    location.href = "/dashboard";
-                };
-            </script>
+        <button class="tactile">
+          <img
+            class="buttonPic"
+            onclick="startRenpyGame()"
+            src="../static/assets/tactile.png"
+            alt=""
+          />
+          Tactile Learner
+        </button>
 
-            <button class="tactile">
-                <img class="buttonPic" onclick="startPygameGame()" src="../static/assets/tactile.png" alt="">
-                Tactile Learner</button>
+        <button class="auditory">
+          <img
+            class="buttonPic"
+            onclick="startRenpyGame()"
+            src="../static/assets/auditory.png"
+            alt=""
+          />
+          Auditory Learner
+        </button>
+      </div>
 
-            <button class="auditory">
-                <img class="buttonPic" onclick="startRenpyGame()" src="../static/assets/auditory.png" alt="">
-                Auditory Learner</button>
-        </div>
+      <script>
+        function startPygameGame() {
+          fetch("/start_pygame_game")
+            .then((response) => response.text())
+            .then((data) => console.log(data))
+            .catch((error) => console.error(error));
+        }
 
+        function startRenpyGame() {
+          fetch("/start_renpy_game")
+            .then((response) => response.text())
+            .then((data) => console.log(data))
+            .catch((error) => console.error(error));
+        }
+      </script>
 
-        <script>
-            function startPygameGame() {
-                fetch('/start_pygame_game')
-                    .then(response => response.text())
-                    .then(data => console.log(data))
-                    .catch(error => console.error(error));
-            }
-    
-            function startRenpyGame() {
-                fetch('/start_renpy_game')
-                    .then(response => response.text())
-                    .then(data => console.log(data))
-                    .catch(error => console.error(error));
-            }
-        </script>
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
 
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-
-        <div class="center2">
-            <button class="solidButton">
-                I dont know!
-            </button>
-        </div>
-      
+      <div class="center2">
+        <button class="solidButton">I dont know!</button>
+      </div>
     </div>
-
-</body>
+  </body>
 </html>
