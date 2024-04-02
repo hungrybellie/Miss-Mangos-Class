@@ -18,6 +18,7 @@ There are two games: Flashcard Frenzy! and Mango Beat! Flashcard Frenzy is your 
 ## Setting up the environment
 Prerequisites: Make sure everything is installed. 
 1. Python/Python3
+   
    Python3 is recommended.
 - To check if its installed: `python3 --version`.  
 - To install: Follow the instructions from the [Python](https://www.python.org/) website. 
@@ -25,6 +26,7 @@ Prerequisites: Make sure everything is installed.
 - To check if its installed: `pip3 --version`.
 - To install: Follow the instructions from [pip install page](https://pip.pypa.io/en/stable/installation/).
 3. PyGame
+
   This will be necessary to run one of the games that's included in Miss Mango's Class: Flashcard Frenzy! The project will open without it, but you will be unable to play FlashCard Frenzy!
 - To check if its installed: `pip3 show pygame`
 - To install: `pip3 install pygame`
@@ -32,6 +34,7 @@ Prerequisites: Make sure everything is installed.
 - To check if its installed: `pip3 show flask`
 - To install: run `pip3 install flask`
 5. Ren'Py
+  
   This will be necessary to run one of the games that's included in Miss Mango's Class: Mango Beat! The project will open without it, but you will be unable to play FlashCard Frenzy!
 - To install: Follow the instructions from the [ren'py](https://www.renpy.org/latest.html) website.
 
