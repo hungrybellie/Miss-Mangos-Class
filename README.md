@@ -6,6 +6,7 @@ Miss Mango's class is an online gamified approach to studying for elementary stu
 Frontend: 
 - HTML
 - CSS
+  
 Backend:
 - Flask
 - Python
