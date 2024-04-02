@@ -62,8 +62,7 @@ Credits:
 [RenPy Open Source Code](https://github.com/RuolinZheng08/renpy-rhythm?tab=readme-ov-file)
 Copyright (c) 2021 Lynn Zheng
 
-[Song Generator](Free lyric and song generator: https://www.riffit.com/song-api 
-)
+[Song Generator](https://www.riffit.com/song-api)
 
 [Open source question generator](https://www.questgen.ai/ )
 Copyright © QuestgenAI, Inc. All rights reserved.
